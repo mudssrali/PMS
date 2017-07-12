@@ -1,5 +1,5 @@
 # Project-Management-System
-This is a software package called project management system. It is developed C#. It has many feature as other project management software do have.
+This is a software package called project management system. It is developed in C#. It has many feature as other project management software do have.
 
 Tools and Technologies
 
