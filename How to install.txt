@@ -1,0 +1,5 @@
+You can follow these steps to install PMS.
+1- Run Project Management.exe file
+2- If you have sql server local database 2016 installed then you can uncheck sql server database 
+   option to install otherwise you have to install in order to run this application.
+3- Must login to as manager or employee to access this system.

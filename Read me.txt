@@ -1,0 +1,7 @@
+**** Project Management System ***
+Manager login credidentials
+Username: Seraskier
+Password: mgr123
+Remember: 
+You can also create new manager. Just mail at Vostok.pms@gmail.com for manager changing.
+Must read how to install program.
