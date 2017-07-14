@@ -12,4 +12,6 @@ Interfaces
 1. Manager Interface
 2. Employee Interface
 
-Manager can do a lot of stuff using manager interface but Employee is restricted to do some operations. Both Manager and Employee have thier on credentials to login into system. There is a password recovery option for Manager and Employee.
+Manager can do a lot of stuff using manager interface but Employee is restricted to do some operations. Both Manager and Employee have their on credentials to login into system. There is a password recovery option for Manager and Employee. 
+Note:
+Recovery password will be sent to user email id if it is correct from Vostok.pms@gmail.com.
