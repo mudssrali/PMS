@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DA4476B-CADF-45C9-9291-7EB8D516BD43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Management_System</RootNamespace>
+    <AssemblyName>Project_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Mudassar\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1362D44E122840101A40A04F950CA46A10A6AD06</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Project_Management_System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="SplashScreen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SplashScreen.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Project.Designer.cs">
+      <DependentUpon>Add Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeam.Designer.cs">
+      <DependentUpon>AddTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Task.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Task.Designer.cs">
+      <DependentUpon>Add_Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cryptor.cs" />
+    <Compile Include="DeleteWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteWait.Designer.cs">
+      <DependentUpon>DeleteWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="EmpDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpDashboard.Designer.cs">
+      <DependentUpon>EmpDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingWait.Designer.cs">
+      <DependentUpon>LoadingWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginWait.Designer.cs">
+      <DependentUpon>LoginWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginWindows.designer.cs">
+      <DependentUpon>LoginWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogoutWait.Designer.cs">
+      <DependentUpon>LogoutWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerDashboard.Designer.cs">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SendingWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendingWait.Designer.cs">
+      <DependentUpon>SendingWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatingWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatingWait.Designer.cs">
+      <DependentUpon>UpdatingWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCustomer.Designer.cs">
+      <DependentUpon>ViewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEMP.Designer.cs">
+      <DependentUpon>ViewEMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProject.Designer.cs">
+      <DependentUpon>ViewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTask.Designer.cs">
+      <DependentUpon>ViewTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTeam.Designer.cs">
+      <DependentUpon>ViewTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Waitform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Waitform.Designer.cs">
+      <DependentUpon>Waitform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeWindow.Designer.cs">
+      <DependentUpon>WelcomeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Project.resx">
+      <DependentUpon>Add Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeam.resx">
+      <DependentUpon>AddTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Task.resx">
+      <DependentUpon>Add_Task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteWait.resx">
+      <DependentUpon>DeleteWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpDashboard.resx">
+      <DependentUpon>EmpDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingWait.resx">
+      <DependentUpon>LoadingWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginWait.resx">
+      <DependentUpon>LoginWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginWindows.resx">
+      <DependentUpon>LoginWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoutWait.resx">
+      <DependentUpon>LogoutWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerDashboard.resx">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendingWait.resx">
+      <DependentUpon>SendingWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatingWait.resx">
+      <DependentUpon>UpdatingWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCustomer.resx">
+      <DependentUpon>ViewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEMP.resx">
+      <DependentUpon>ViewEMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProject.resx">
+      <DependentUpon>ViewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTask.resx">
+      <DependentUpon>ViewTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTeam.resx">
+      <DependentUpon>ViewTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waitform.resx">
+      <DependentUpon>Waitform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeWindow.resx">
+      <DependentUpon>WelcomeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Project_Management_System_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Login.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+    <None Include="bit.PNG" />
+    <None Include="Folder\Arrows-Left-icon.png" />
+    <None Include="Folder\back.png" />
+    <None Include="Folder\Windows 10 eigenes Bild.jpg" />
+    <None Include="Folder\1495285317_icons_search.png" />
+    <None Include="Folder\Minimize.png" />
+    <None Include="Folder\Maximize.png" />
+    <None Include="Folder\Restore.png" />
+    <None Include="Folder\1495289974_icon-close.png" />
+    <None Include="Folder\Logout.png" />
+    <None Include="Folder\Details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Folder\User-Interface-Close-Window-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Folder\newBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softwareBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1496450264_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2.png" />
+    <None Include="Resources\D1.png" />
+    <None Include="Folder\home-icon.png" />
+    <Content Include="icon.ico" />
+    <None Include="Resources\pms2.PNG" />
+    <None Include="Resources\pms.PNG" />
+    <None Include="Resources\softBack1.jpg" />
+    <None Include="Resources\softBack.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
